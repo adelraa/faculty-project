@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+
+}
+:root{
+    --main-color: #e3ebee;
+    --action-color:#27a4ca ;
+    --font-color:#152b36d9;;
+    --hover-color:#2eb5df;
+    --backgrond-color:#ececec;
+    --pading-text: 75px;
+}
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    padding:0px ;
+    margin: 0px;
+    
+}
+a {
+    text-decoration: auto;
+}
+  body{
+    font-family: sans-serif;
+    overflow: hidden;
+    user-select: none;
+  }
+  /*Small*/
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+    
+}
+
+/*Medium*/
+@media (min-width:992px) {
+    .container{
+        width:970px;
+    }
+    
+}
+
+/*Large*/
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    } 
+} 
+.container{
+    padding-left:15px ;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+  /* title sections */
+  .main-title h2 {
+    border: 5px solid black;
+    color: #c7b8a4;
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0px auto 80px;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-title h2::before,
+.main-title h2::after{
+    content: " ";
+    height: 12px;
+    width: 12px;
+    background-color: #f1bd76;
+    position: absolute;
+    border-radius: 50%;
+    /* left: 0; */
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.main-title h2::before{
+    
+    left: -30px;
+
+}
+.main-title h2::after{
+   
+    right: -30px;
+
+}
+.main-title h2:hover{
+    border: 2px solid white;
+    color: white;
+    transition-delay: 0.5s;
+}
+.main-title h2:hover:before
+{ z-index: -1;
+    animation: left-move  0.5s linear forwards;
+}  
+.main-title h2:hover:after
+{ z-index: -1;
+    animation: right-move  0.5s linear forwards ;
+}
+@keyframes left-move {
+    50%{
+        left: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100%{ left: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes right-move {
+    50%{
+        right: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100%{ right:0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+  /* end title sections */
+  /*  START Artificial Inteligence */
+  /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .computer-science .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 200px;
+  }
+  .computer-science .content .info{
+      width: 700px;
+      font-weight: bold;
+      color: #f1bd76;
+
+  }
+  
+
+  .computer-science .content .image img{
+      width: 700px;
+      opacity: 0.5;
+
+  }
+  /* Artificial inteligence  */
+  #myVideo-2 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+  }
+  .artificial{
+      padding-top: 100px;
+      padding-bottom: 100px;
+     
+  }
+  .artificial .content {
+    position: fixed;
+    bottom: 0;
+   
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 200px;
+   
+  }
+  .artificial .content .info{
+      width: 700px;
+      font-weight: bold;
+      color: #ecfaff;
+
+  }
+  .artificial .content .image img {
+      width: 700px;
+      opacity: .9;
+      padding-top: 20px;
+  }
+  #myVideo-3 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+  }
+  .information-system{
+      padding-top: 100px;
+      padding-bottom: 100px;
+     
+  }
+  .information-system .content {
+    position: fixed;
+    bottom: 0;
+   
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 200px;
+   
+  }
+  .information-system .content .info{
+      width: 700px;
+      font-weight: bold;
+      color: #ecfaff;
+
+  }
+  .information-system .content .image img {
+      width: 600px;
+      opacity: .9;
+  }
+  .information-system .main-title h2{
+    color: #1ae8da;
+  }
+  .information-system .main-title h2:hover{
+color: white;
+  }
+  .information-system .main-title h2::before,
+  .information-system .main-title h2::after{
+      content: " ";
+      height: 12px;
+      width: 12px;
+      background-color: #1ae8da;
+      position: absolute;
+      border-radius: 50%;
+      /* left: 0; */
+      top: 50%;
+      transform: translateY(-50%);
+  
+
+      
+  }
+
+
+  
+ 
+  
+  /*  end Artificial Inteligence */

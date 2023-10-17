@@ -1,0 +1,84 @@
+.main{
+    background: rgb(12, 56, 56);
+}
+.container{
+    padding: 50px;
+    margin: 90px;
+    display: flex;
+    flex: left;
+}
+.container div{
+    margin: 50px 20px;
+}
+.container div a h2 {
+    text-align: center;
+    color: white;
+}
+/*==========================نظام الجودة=====================*/
+.body-q{
+    background: rgb(222, 231, 231);
+}
+h4{
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h4::before{
+    content: "";
+    border: brown 3px solid;
+    border-top:0 ;
+    width: 1px;
+    height: 1px;
+    margin: 2px;
+}
+.cont
+{
+    margin: 50px;
+    border: teal 5px double;
+    padding: 20px;
+    border-radius:25px ;
+}
+.cont p {
+    font-family: 'Times New Roman', Times, serif;
+}
+/*=====================خدمات عامة =====================*/
+
+.choose{
+    display: grid;
+    grid-template-rows: 155px 155px 100px;
+    grid-template-columns: repeat(300px);
+    z-index: 100;
+}
+.choose div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 70px;
+    margin: 70px;
+    border: rgb(29, 78, 73) solid 2px;
+    border-radius: 450px;
+    width: 200px;
+    grid-column-start: 2;
+    background: rgb(12, 56, 56);
+    z-index: 100;
+}
+
+.choose div a {
+    
+ text-decoration: solid;
+ font-style: italic;
+ font-weight: 600;
+ color: rgb(255, 255, 255);
+ font-size: 20px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ z-index: 100;
+}
+.choose div a:hover {
+color: rgb(0, 0, 0);
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+  }
